@@ -10,6 +10,10 @@ const db = mysql.createConnection({
     database:"hospital"
 })
 
+app.get("/", (req,res)=>{
+    res.json("this is the backend")
+})
+
 app.listen(8800,()=>{
     console.log("Connected to server!")
 })
